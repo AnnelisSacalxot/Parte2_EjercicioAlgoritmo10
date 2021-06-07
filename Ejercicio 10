@@ -1,0 +1,26 @@
+10. Se leen desde teclado números hasta que la suma de los mismos llegue a 1000. Mientras tanto debe hallar:
+a. La cantidad de números múltiplos de 6.
+b. La suma de los números que se encuentran entre el 1 y el 10 (incluidos).
+
+Algoritmo Números_1000
+	Repetir
+		Definir num Como Entero
+		num1 <- 0
+		num2 <- 0
+		numMax <- 1000
+		i <- 1
+		Escribir "Ingrese número:"
+		Leer num
+		Si i < 1001 Entonces
+			incremento <-  num1+num2+i
+			Si incremento mod 6 = 0 Entonces
+				Escribir "Los números divisibles entre 6 son:", suma
+				Si num1 > 0 && 11 <  num2 Entonces
+					suma <- num1+mum2
+					Escribir "La suma entre los número son"
+				FinSi
+			FinSi
+		FinSi
+	Hasta Que numMax = 1000
+	Escribir "La suma ya ha llegado a:", numMax
+FinAlgoritmo
